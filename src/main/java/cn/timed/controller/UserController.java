@@ -1,4 +1,4 @@
-package cn.springmvc.controller;
+package cn.timed.controller;
 
 /**
  * Created by xuan on 15/11/29.

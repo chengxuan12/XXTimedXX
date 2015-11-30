@@ -1,10 +1,10 @@
-package cn.springmvc.service;
+package cn.timed.service;
 
 /**
  * Created by xuan on 15/11/29.
  */
 
-import cn.springmvc.model.User;
+import cn.timed.model.User;
 
 
 public interface UserService {

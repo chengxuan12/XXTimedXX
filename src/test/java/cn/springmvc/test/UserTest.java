@@ -4,8 +4,8 @@ package cn.springmvc.test;
  * Created by xuan on 15/11/29.
  */
 
-import cn.springmvc.model.User;
-import cn.springmvc.service.UserService;
+import cn.timed.model.User;
+import cn.timed.service.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

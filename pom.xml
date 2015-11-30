@@ -1,19 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>eyas.springmvc</groupId>
-    <artifactId>springmvc</artifactId>
+    <groupId>cn.timed</groupId>
+    <artifactId>Timed</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springmvc Maven Webapp</name>
+    <name>Timed Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
         <!-- spring版本号 -->
-        <spring.version>3.2.4.RELEASE</spring.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
         <!-- mybatis版本号 -->
-        <mybatis.version>3.2.4</mybatis.version>
+        <mybatis.version>3.2.6</mybatis.version>
         <!-- log4j日志文件管理包版本 -->
-        <slf4j.version>1.6.6</slf4j.version>
+        <slf4j.version>1.7.7</slf4j.version>
         <log4j.version>1.2.9</log4j.version>
     </properties>
     <dependencies>
@@ -136,9 +136,20 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.5.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.2</version>
+        </dependency>
         <!-- log end -->
     </dependencies>
     <build>
-        <finalName>springmvc</finalName>
+        <finalName>Timed</finalName>
     </build>
 </project>

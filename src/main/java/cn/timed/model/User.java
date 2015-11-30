@@ -1,4 +1,4 @@
-package cn.springmvc.model;
+package cn.timed.model;
 
 /**
  * Created by xuan on 15/11/29.
