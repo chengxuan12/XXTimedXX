@@ -4,15 +4,18 @@ package cn.springmvc.test;
  * Created by xuan on 15/11/29.
  */
 
-import cn.timed.model.User;
+import cn.timed.domain.User;
 import cn.timed.service.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.annotation.Resource;
+
 
 public class UserTest {
+
 
     private UserService userService;
 
@@ -25,10 +28,12 @@ public class UserTest {
     }
 
     @Test
-    public void addUser(){
-        User user = new User();
-        user.setNickname("你好");
-        user.setState(2);
-        System.out.println(userService.insertUser(user));
+    public void getUser(){
+        User user = userService.getUser(1);
+        System.out.println(user.getId());
     }
+    public void addUser(){
+
+    }
+
 }

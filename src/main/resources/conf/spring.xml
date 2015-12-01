@@ -10,6 +10,13 @@
     <!-- 引入jdbc配置文件 -->
     <context:property-placeholder location="classpath:conf/jdbc.properties"/>
 
-    <!-- 扫描文件（自动将servicec层注入） -->
+    <!-- 扫描文件 -->
+    <context:component-scan base-package="cn.timed.*"/>
+    <context:component-scan base-package="cn.timed.controller"/>
+    <context:component-scan base-package="cn.timed.dao"/>
+    <context:component-scan base-package="cn.timed.domain"/>
+    <context:component-scan base-package="cn.timed.service.Impl"/>
     <context:component-scan base-package="cn.timed.service"/>
+
+
 </beans>
