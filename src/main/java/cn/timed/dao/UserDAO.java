@@ -7,6 +7,10 @@ package cn.timed.dao;
 import cn.timed.domain.User;
 import org.springframework.stereotype.Repository;
 
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
 @Repository
 public interface UserDAO {
 
@@ -17,6 +21,9 @@ public interface UserDAO {
      */
     int insertUser(User user);
 
-    User getUser(Integer user);
+    User getUserById(Integer id);
+    User getUserByEmail(String email);
+    User getUserByPhone(String phone);
+    List<User> getAllUser();
 
 }
