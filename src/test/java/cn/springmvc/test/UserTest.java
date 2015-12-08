@@ -10,9 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.annotation.Resource;
-
+import java.util.List;
 
 public class UserTest {
 
@@ -28,6 +26,10 @@ public class UserTest {
     }
 
     @Test
+    public void getAllUser(){
+        List<User> userList=userService.getAllUser();
+        System.out.println( userList.get(0));
+    }
     public void getUser(){
         User user = userService.getUser(1);
         System.out.println(user.getId());

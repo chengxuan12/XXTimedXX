@@ -4,9 +4,33 @@
 
     <!-- 根据ID查询 user -->
     <select id="getUser" resultType="cn.timed.domain.User" parameterType="cn.timed.domain.User" >
-        SELECT * FROM t_user WHERE id = #{uid}
+        SELECT * FROM t_user WHERE id = #{id} OR mobilephone = #{mobilephone} OR email = #{email}
     </select>
 
+    <select id="getUserById" resultType="cn.timed.domain.User" parameterType="java.lang.Integer" >
+        SELECT * FROM t_user WHERE id = #{id}
+    </select>
+    <select id="getAllUser" resultMap="UserResultMap" >
+        SELECT * FROM t_user
+    </select>
+    <insert id="insertUser" parameterType="cn.timed.domain.User">
+        insert into t_user (id, realname, email, password,
+        mobilephone,createTime)
+        values (UUID() , #{realname,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+        #{mobilephone,jdbcType=VARCHAR}, #{createTime})
+    </insert>
+
+    <resultMap id="UserResultMap" type="cn.timed.domain.User">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="user_account" property="userAccount" jdbcType="VARCHAR"/>
+        <result column="real_name" property="realName" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="mobile_phone" property="mobilePhone" jdbcType="VARCHAR"/>
+        <result column="gender" property="gender" jdbcType="INTEGER"/>
+        <result column="birthday" property="birthday" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp"/>
+    </resultMap>
 
     <resultMap id="BaseResultMap" type="cn.timed.domain.User">
         <id column="id" property="id" jdbcType="INTEGER"/>
@@ -16,12 +40,7 @@
         <result column="mobilephone" property="mobilephone" jdbcType="VARCHAR"/>
         <result column="createTime" property="createTime" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp"/>
     </resultMap>
-    <insert id="insert" parameterType="cn.timed.domain.User">
-        insert into user (id, realname, email, password,
-        mobilephone,createTime)
-        values (UUID() , #{realname,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
-        #{mobilephone,jdbcType=VARCHAR}, #{createTime})
-    </insert>
+
 
 
 

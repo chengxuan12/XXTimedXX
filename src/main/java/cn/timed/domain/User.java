@@ -10,9 +10,9 @@ import java.sql.Timestamp;
 public class User implements Serializable {
 
     private int id;
-    private String mobilephone;
-    private String useraccounnt;
-    private String realname;
+    private String mobilePhone;
+    private String userAccount;
+    private String realName;
     private String password;
     private String email;
     private short gender;
@@ -22,14 +22,14 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(String email) {
-        this.email = email;
+    public User(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
     }
 
-    public User(int id, String email, String mobilephone) {
+    public User(int id, String email, String mobilePhone) {
         this.id = id;
         this.email = email;
-        this.mobilephone = mobilephone;
+        this.mobilePhone = mobilePhone;
     }
 
     public int getId() {
@@ -40,28 +40,28 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getMobilephone() {
-        return mobilephone;
+    public String getMobilePhone() {
+        return mobilePhone;
     }
 
-    public void setMobilephone(String mobilephone) {
-        this.mobilephone = mobilephone;
+    public void setMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
     }
 
-    public String getUseraccounnt() {
-        return useraccounnt;
+    public String getUserAccount() {
+        return userAccount;
     }
 
-    public void setUseraccounnt(String useraccounnt) {
-        this.useraccounnt = useraccounnt;
+    public void setUserAccount(String userAccount) {
+        this.userAccount = userAccount;
     }
 
-    public String getRealname() {
-        return realname;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setRealname(String realname) {
-        this.realname = realname;
+    public void setRealName(String realName) {
+        this.realName = realName;
     }
 
     public String getPassword() {
@@ -103,4 +103,5 @@ public class User implements Serializable {
     public void setBirthday(Timestamp birthday) {
         this.birthday = birthday;
     }
+
 }
