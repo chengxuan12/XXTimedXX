@@ -18,7 +18,6 @@
         <param-value>Timed.root</param-value>
     </context-param>
 
-
     <!-- Spring字符集过滤器 -->
     <filter>
         <filter-name>encodingFilter</filter-name>
@@ -71,10 +70,9 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
-        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
-
 </web-app>

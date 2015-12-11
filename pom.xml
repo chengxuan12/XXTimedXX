@@ -173,11 +173,6 @@
             <artifactId>httpclient</artifactId>
             <version>4.5</version>
         </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.0.0.GA</version>
-        </dependency>
         
     </dependencies>
     <build>

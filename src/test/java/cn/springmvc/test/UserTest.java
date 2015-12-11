@@ -14,7 +14,6 @@ import java.util.List;
 
 public class UserTest {
 
-
     private UserService userService;
 
     @Before
@@ -25,13 +24,14 @@ public class UserTest {
         userService = (UserService) context.getBean("userServiceImpl");
     }
 
-    @Test
+
     public void getAllUser(){
-        List<User> userList=userService.getAllUser();
-        System.out.println( userList.get(0));
+     //   List<User> userList=userService.getAllUser();
+     //   System.out.println( userList.get(0));
     }
+    @Test
     public void getUser(){
-        User user = userService.getUser(1);
+        User user = userService.getUserById(1);
         System.out.println(user.getId());
     }
     public void addUser(){

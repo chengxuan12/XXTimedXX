@@ -11,12 +11,5 @@
     <context:property-placeholder location="classpath:conf/jdbc.properties"/>
 
     <!-- 扫描文件 -->
-    <context:component-scan base-package="cn.timed.*"/>
-    <context:component-scan base-package="cn.timed.controller"/>
-    <context:component-scan base-package="cn.timed.dao"/>
-    <context:component-scan base-package="cn.timed.domain"/>
-    <context:component-scan base-package="cn.timed.service.Im"/>
-    <context:component-scan base-package="cn.timed.service"/>
-
-
+    <context:component-scan base-package="cn.timed"/>
 </beans>

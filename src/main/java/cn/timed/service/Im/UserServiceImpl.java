@@ -11,31 +11,23 @@ import cn.timed.domain.User;
 import cn.timed.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.BindingResult;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.List;
+import java.util.*;
+
 import cn.timed.domain.DataResult;
-import javax.validation.Valid;
 
 @Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDAO userDAO;
+    UserDAO userDAO;
 
     @Autowired
-    private ErrorCodeDao errorCodeDao;
+    ErrorCodeDao errorCodeDao;
 
-    @Autowired
-    private UserService userService;
-
-
-    public int insertUser(User user) {
-        // TODO Auto-generated method stub
-        return userDAO.insertUser(user);
-    }
     public User getUserById(Integer id) {
         return userDAO.getUserById(id);
     }
@@ -46,8 +38,22 @@ public class UserServiceImpl implements UserService {
     public User getUserByPhone(String phone){
         return userDAO.getUserByPhone(phone);
     }
-    public List<User> getAllUser() {
-        return userDAO.getAllUser();
+
+    public DataResult getAllUser() {
+        DataResult dataResult=new DataResult();
+        List<User> users=userDAO.getAllUser();
+        Map<String,Object> result=new LinkedHashMap<String, Object>();
+        if (users.size()>0){
+            dataResult.setCode(200);
+            dataResult.setMessage("ok");
+            result.put("items",users);
+            dataResult.setResult(result);
+            return dataResult;
+        }
+        dataResult.setCode(400);
+        dataResult.setMessage("error");
+        dataResult.setResult(result);
+        return dataResult;
     }
 
     public DataResult loginUser(String mobileNumber, String password) {
@@ -69,7 +75,7 @@ public class UserServiceImpl implements UserService {
         return dataResult;
     }
 
-    public DataResult registerUser(@RequestBody @Valid User user, @PathVariable("randNum") String randNum, BindingResult result) {
-        return userService.registerUser(user,randNum,result);
+    public DataResult registerUser(@RequestBody User user, @PathVariable("randNum") String randNum) {
+        return null;
     }
 }

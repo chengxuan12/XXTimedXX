@@ -6,23 +6,23 @@ package cn.timed.service;
 
 import cn.timed.domain.User;
 import cn.timed.domain.DataResult;
-import org.springframework.validation.BindingResult;
+
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import javax.validation.Valid;
 
 @RestController
-@RequestMapping(value = "/user", produces = {"application/json", "application/xml"})
+@RequestMapping(value = "/user_api/v1", produces = {"application/json", "application/xml"})
 public interface UserService {
 
-    int  insertUser(User user);
     User getUserById(Integer id);
     User getUserByEmail(String email);
     User getUserByPhone(String phone);
 
 
-    List<User> getAllUser();
+    @RequestMapping(value = "/userList", method = RequestMethod.GET, produces = "application/json")
+    public DataResult getAllUser();
+
+   // List<User> getAllUser();
 
 
     @RequestMapping(value = "/login", method = RequestMethod.POST,
@@ -34,6 +34,6 @@ public interface UserService {
     @RequestMapping(value = "/register/{randNum}", method = RequestMethod.POST,
             produces = "application/json",
             consumes = {"application/xml", "application/json", "application/x-www-form-urlencoded"})
-    public DataResult registerUser(@RequestBody @Valid User user, @PathVariable("randNum") String randNum ,BindingResult result);
+    public DataResult registerUser(User user, @PathVariable("randNum") String randNum );
 
  }

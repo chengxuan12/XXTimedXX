@@ -19,7 +19,9 @@
                         http://www.springframework.org/schema/tx
                         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-
+    <context:component-scan base-package="cn.timed.service"/>
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
     <!-- 避免IE在ajax请求时，返回json出现下载 -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
         <property name="messageConverters">
