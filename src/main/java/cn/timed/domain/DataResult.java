@@ -11,7 +11,8 @@ public class DataResult implements java.io.Serializable {
 	private Map<String, Object> result;
 	private String message;
 
-	public DataResult(){}
+	public DataResult(){
+	}
 	public DataResult(int code,Map<String, Object> result, String message) {
 		this.code = code;
 		this.result = result;

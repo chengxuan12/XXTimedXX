@@ -9,9 +9,8 @@ import java.sql.Timestamp;
 
 public class User implements Serializable {
 
-    private int id;
+    private String id;
     private String mobilePhone;
-    private String userAccount;
     private String realName;
     private String password;
     private String email;
@@ -26,17 +25,17 @@ public class User implements Serializable {
         this.mobilePhone = mobilePhone;
     }
 
-    public User(int id, String email, String mobilePhone) {
+    public User(String id, String email, String mobilePhone) {
         this.id = id;
         this.email = email;
         this.mobilePhone = mobilePhone;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -46,14 +45,6 @@ public class User implements Serializable {
 
     public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
-    }
-
-    public String getUserAccount() {
-        return userAccount;
-    }
-
-    public void setUserAccount(String userAccount) {
-        this.userAccount = userAccount;
     }
 
     public String getRealName() {

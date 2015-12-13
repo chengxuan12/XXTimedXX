@@ -5,8 +5,10 @@ package cn.timed.service.Im;
  */
 
 import cn.timed.dao.ErrorCodeDao;
+import cn.timed.dao.SiAccountDao;
 import cn.timed.dao.UserDAO;
 import cn.timed.domain.ErrorCode;
+import cn.timed.domain.SingleAccount;
 import cn.timed.domain.User;
 import cn.timed.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.*;
 
 import cn.timed.domain.DataResult;
@@ -28,7 +32,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     ErrorCodeDao errorCodeDao;
 
-    public User getUserById(Integer id) {
+    @Autowired
+    SiAccountDao siAccountDao;
+
+    public User getUserById(String id) {
         return userDAO.getUserById(id);
     }
 
@@ -58,24 +65,77 @@ public class UserServiceImpl implements UserService {
 
     public DataResult loginUser(String mobileNumber, String password) {
         DataResult dataResult=new DataResult();
+        Map<String, Object> result = new HashMap<>();
+        dataResult.setResult(result);
+        ErrorCode errorCode;
         if(password==""){
             dataResult.setCode(1001);
-            ErrorCode errorCode= errorCodeDao.getCode(1001);
+            errorCode= errorCodeDao.getErrorCode(1001);
             dataResult.setMessage("密码"+errorCode.getMessage());
             return dataResult;
-
         }
-        if(userDAO.getUserByEmail(mobileNumber).getPassword()==password){
+        User user=userDAO.getUserByPhone(mobileNumber);
+        if(user==null){
+            dataResult.setCode(1003);
+            errorCode= errorCodeDao.getErrorCode(1003);
+            dataResult.setMessage(errorCode.getMessage());
+            return dataResult;
+        }
+        if(user.getPassword().equals(password)){
             dataResult.setCode(200);
             dataResult.setMessage("登录成功");
             return dataResult;
+
         }else {
-            dataResult.setCode(333);
+            dataResult.setCode(1002);
+            errorCode= errorCodeDao.getErrorCode(1002);
+            dataResult.setMessage(errorCode.getMessage());
+            return dataResult;
         }
-        return dataResult;
     }
 
-    public DataResult registerUser(@RequestBody User user, @PathVariable("randNum") String randNum) {
-        return null;
+    public DataResult registerUser(String mobileNumber, String password) {
+
+        DataResult dataResult=new DataResult();
+        Map<String, Object> result = new HashMap<>();
+        dataResult.setResult(result);
+        ErrorCode errorCode;
+        if(password==""){
+            dataResult.setCode(1001);
+            errorCode= errorCodeDao.getErrorCode(1001);
+            dataResult.setMessage("密码"+errorCode.getMessage());
+            return dataResult;
+        }
+        User user=userDAO.getUserByPhone(mobileNumber);
+        if(user!=null){
+            dataResult.setCode(1004);
+            errorCode= errorCodeDao.getErrorCode(1004);
+            dataResult.setMessage(errorCode.getMessage());
+            return dataResult;
+        }
+
+        User nUser=new User();
+        SingleAccount siAccount=new SingleAccount();
+        nUser.setCreateTime(new Timestamp(new Date().getTime()));
+        nUser.setId("ur00000000003");
+        nUser.setMobilePhone(mobileNumber);
+        nUser.setPassword(password);
+
+        siAccount.setId("sa00000000003");
+        siAccount.setUserId("ur00000000003");
+        try {
+            userDAO.insert(nUser);
+            siAccountDao.insert(siAccount);
+            dataResult.setCode(200);
+            dataResult.setMessage("用户注册成功");
+            return dataResult;
+
+        } catch (Exception e) {
+            dataResult.setCode(1006);
+            errorCode= errorCodeDao.getErrorCode(1006);
+            dataResult.setMessage(errorCode.getMessage());
+            return dataResult;
+        }
+
     }
 }

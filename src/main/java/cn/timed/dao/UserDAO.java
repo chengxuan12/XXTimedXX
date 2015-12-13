@@ -12,9 +12,11 @@ import java.util.List;
 @Repository
 public interface UserDAO {
 
-    User getUserById(Integer id);
+    User getUserById(String id);
     User getUserByEmail(String email);
     User getUserByPhone(String phone);
     List<User> getAllUser();
+    void insert(User user);
+
 
 }

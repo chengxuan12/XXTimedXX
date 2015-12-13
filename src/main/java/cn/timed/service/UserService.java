@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/user_api/v1", produces = {"application/json", "application/xml"})
 public interface UserService {
 
-    User getUserById(Integer id);
+    User getUserById(String id);
     User getUserByEmail(String email);
     User getUserByPhone(String phone);
 
@@ -27,13 +27,14 @@ public interface UserService {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST,
             produces = "application/json",
-            consumes = {"application/xml", "application/json", "application/x-www-form-urlencoded"})
-    public DataResult loginUser(@RequestParam(value = "mobileNumber", defaultValue = "") String mobileNumber,
-                                @RequestParam(value = "password", defaultValue = "") String password);
+            consumes = {"application/x-www-form-urlencoded"})
+    public DataResult loginUser(@RequestParam(value = "mobileNumber") String mobileNumber,
+                                @RequestParam(value = "password") String password);
 
-    @RequestMapping(value = "/register/{randNum}", method = RequestMethod.POST,
+    @RequestMapping(value = "/register", method = RequestMethod.POST,
             produces = "application/json",
-            consumes = {"application/xml", "application/json", "application/x-www-form-urlencoded"})
-    public DataResult registerUser(User user, @PathVariable("randNum") String randNum );
+            consumes = {"application/x-www-form-urlencoded"})
+    public DataResult registerUser(@RequestParam(value = "mobileNumber") String mobileNumber,
+                                   @RequestParam(value = "password") String password);
 
  }

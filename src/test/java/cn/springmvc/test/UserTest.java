@@ -31,7 +31,7 @@ public class UserTest {
     }
     @Test
     public void getUser(){
-        User user = userService.getUserById(1);
+        User user = userService.getUserById("ur00000000001");
         System.out.println(user.getId());
     }
     public void addUser(){

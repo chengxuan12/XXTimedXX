@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ErrorCodeDao {
-    ErrorCode getCode(Integer id);
+    ErrorCode getErrorCode(Integer id);
 }
