@@ -1,0 +1,61 @@
+@media (min-width: 1200px){
+    .chooseCapital .row{
+        padding:5px 0px;
+        margin-right: 80px;
+    }
+
+    .remarks{
+        padding:8px;
+        width:70%;
+    }
+
+    .input-remark-width{
+        width:40%;
+    }
+    .mcontainer{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .footer .f2{
+        padding:30px 0;
+    }
+
+    .product-progress{
+        position:absolute;
+        top:55%;
+        left:74.8%
+    }
+
+    .product-circle {
+        width: 104px;
+        height: 104px;
+    }
+    .product-circle .pie_left,.product-circle .pie_right {
+        width: 104px;
+        height: 104px;
+    }
+    .product-circle .left,.product-circle .right {
+        width:104px;
+        height:104px;
+    }
+    .product-circle  .pie_right,.product-circle .right {
+        clip:rect(0,auto,auto,52px);
+    }
+    .product-circle  .pie_left,.product-circle .left {
+        clip:rect(0,52px,auto,0);
+    }
+    .product-circle  .mask {
+        width: 84px;
+        height: 84px;
+        line-height: 84px;
+        font-size: 17px;
+        left: 10px;
+        top: 10px;
+    }
+    .wal_register{
+        background:url(../../images/sign_up_bg.png) no-repeat -300px -92px;
+    }
+    .walLogin{
+        background:url(../../images/login_bg.png) no-repeat -300px 0;
+    }
+}

@@ -1,0 +1,51 @@
+
+@media (min-width: 1550px){
+    .search-col-lg-1{
+        min-height:1px;
+        float:left;
+        width: 8.33333333%;
+    }
+    .swiperRight{
+
+        padding: 2.5% 3%;
+    }
+    .swiperBottom{
+        padding-bottom: 12%;
+    }
+    .swiperFontS{
+        font-size: 14px;
+    }
+    .swiperFontM{
+        font-size: 20px;
+    }
+    .swiperFontL{
+        font-size: 34px;
+    }
+    .zhiFuBaoBtn{
+        height: 45px;
+        line-height:45px;
+    }
+    .wal_register{
+        background:url(../../images/sign_up_bg.png) no-repeat -200px -92px;
+    }
+    .walLogin{
+        background:url(../../images/login_bg.png) no-repeat -200px 0;
+    }
+}
+@media (min-width: 1700px){
+    .zhiFuBaoBtn{
+        height: 50px;
+        line-height:50px;
+    }
+    .chooseCapital .row{
+        padding:5px 0px;
+        margin-right: 280px;
+    }
+    .wal_register{
+        background:url(../../images/sign_up_bg.png) no-repeat 0 -92px;
+    }
+    .walLogin{
+        background:url(../../images/login_bg.png) no-repeat;
+    }
+
+}

@@ -1,0 +1,236 @@
+.ath-viewport * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ath-viewport {
+    position: relative;
+    z-index: 2147483641;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.ath-modal {
+    background: rgba(0,0,0,0.6);
+}
+
+.ath-mandatory {
+    background: #000;
+}
+
+.ath-container {
+    position: absolute;
+    z-index: 2147483641;
+    padding: 0.7em 0.6em;
+    width: 18em;
+
+    background: #eee;
+    background-size: 100% auto;
+
+    box-shadow: 0 0.2em 0 #d1d1d1;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    text-align: center;
+    border-radius:10px;
+}
+
+.ath-ios.ath-phone {
+    bottom: 1.8em;
+    left: 50%;
+    margin-left: -9em;
+}
+
+.ath-ios7.ath-tablet {
+    left: 0.7em;
+    top: 1.8em;
+}
+
+.ath-ios6.ath-tablet {
+    left: 5em;
+    top: 1.8em;
+}
+
+.ath-android {
+    right: 1.5em;
+    top: 1.8em;
+}
+
+/* close icon */
+.ath-container:before {
+    content: '脳';
+    position: relative;
+    display: block;
+    float: right;
+    margin: -0.3em -0.25em 0 0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.3em;
+    color: #a33;
+    z-index: 2147483642;
+}
+
+.ath-container.ath-icon:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    float: none;
+}
+
+.ath-mandatory .ath-container:before {
+    display: none;
+}
+
+.ath-android:before {
+    line-height: 1.2em;
+}
+
+.ath-ios:before {
+    line-height: 1em;
+}
+
+.ath-container.ath-android:before {
+    float: left;
+    margin: -0.3em 0.1em 0 -0.2em;
+}
+
+.ath-container.ath-android.ath-icon:before {
+    position: absolute;
+    right: auto;
+    left: 0;
+    margin: 0;
+    float: none;
+}
+
+
+/* applied only if the application icon is shown */
+.ath-container.ath-icon {
+
+}
+
+.ath-action-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.ath-android .ath-action-icon {
+    width: 1.2em;
+    height: 1.8em;
+    background-image:url(../images/iphone-icon-180.png);
+    background-size: auto 100%;
+}
+
+.ath-ios7 .ath-action-icon {
+    width: 1.6em;
+    height: 1.6em;
+    background-image:url(../images/iphone-icon-180.png);
+    margin-top: -0.3em;
+    background-size: auto 100%;
+}
+
+.ath-ios6 .ath-action-icon {
+    width: 1.8em;
+    height: 1.8em;
+    background-image:url(../images/iphone-icon-180.png);
+    margin-bottom: 0.4em;
+    background-size: 100% auto;
+}
+
+.ath-container p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2147483642;
+    text-shadow: 0 0.1em 0 #fff;
+    font-size: 1.1em;
+}
+
+.ath-ios.ath-phone:after {
+    content: '';
+    background: #eee;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    bottom: -0.9em;
+    left: 50%;
+    margin-left: -1em;
+    -webkit-transform: scaleX(0.9) rotate(45deg);
+    transform: scaleX(0.9) rotate(45deg);
+    box-shadow: 0.2em 0.2em 0 #d1d1d1;
+}
+
+.ath-ios.ath-tablet:after {
+    content: '';
+    background: #eee;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: -0.9em;
+    left: 50%;
+    margin-left: -1em;
+    -webkit-transform: scaleX(0.9) rotate(45deg);
+    transform: scaleX(0.9) rotate(45deg);
+    z-index: 2147483641;
+}
+
+.ath-android:after {
+    content: '';
+    background: #eee;
+    background: -webkit-linear-gradient(-45deg, rgba(238,238,238,0) 0%,rgba(238,238,238,0) 50%,rgba(238,238,238,1) 50%,rgba(238,238,238,1) 100%);
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: -1.5em;
+    right: 0;
+}
+
+.ath-application-icon {
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0 auto 0.2em auto;
+    height: 6em;
+    width: 6em;
+    z-index: 2147483642;
+}
+
+/* OS specific classes */
+.ath-container.ath-ios .ath-application-icon {
+    border-radius: 1em;
+    box-shadow: 0 0.2em 0.4em rgba(0,0,0,0.3),
+    inset 0 0.07em 0 rgba(255,255,255,0.5);
+    margin: 0 auto 0.4em auto;
+}
+
+@media only screen and (orientation: landscape) {
+    .ath-container.ath-phone {
+        width: 24em;
+    }
+
+    .ath-ios.ath-phone {
+        margin-left: -12em;
+    }
+
+    .ath-ios6:after {
+        left: 39%;
+    }
+}

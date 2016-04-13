@@ -1,0 +1,165 @@
+
+@media (min-width: 992px){
+    .product-profit{
+        color:#fff;
+        font-size:70px;
+        position:absolute;
+        top:12%;
+        left:58.8%
+    }
+    .product-timeLimit{
+        color:#fff;
+        font-size:45px;
+        position:absolute;
+        top:27%;
+        left:29.5%
+    }
+
+
+    .peizi-status{
+        padding-left:7px;
+    }
+    .peizi-left{
+        padding-left:12px;
+    }
+    .user-left{margin:0px 10px 0px -10px}
+
+    .mcol-md-1{
+        min-height:1px;
+        float:left;
+        width: 6.66666667%;
+    }
+    .mcol-md-2{
+        min-height:1px;
+        float:left;
+        width: 13.3333333%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+    .product-rightTop{
+        height:375px;
+    }
+    .product-profit{
+        left: 58%;
+    }
+
+    .product-progress{
+        position:absolute;
+        top:55.3%;
+        left:74.7%
+    }
+
+    .product-circle {
+        width: 84px;
+        height: 84px;
+    }
+    .product-circle .pie_left,.product-circle .pie_right {
+        width: 84px;
+        height: 84px;
+    }
+    .product-circle .left,.product-circle .right {
+        width:84px;
+        height:84px;
+    }
+    .product-circle  .pie_right,.product-circle .right {
+        clip:rect(0,auto,auto,42px);
+    }
+    .product-circle  .pie_left,.product-circle .left {
+        clip:rect(0,42px,auto,0);
+    }
+    .product-circle  .mask {
+        width: 68px;
+        height: 68px;
+        line-height: 68px;
+        font-size: 15px;
+        left: 8px;
+        top: 8px;
+    }
+
+    .chooseCapital .row{
+        padding:5px 0px;
+        margin-right: 60px;
+    }
+
+    .remarks{
+        padding:8px;
+        width:80%;
+    }
+
+    .input-remark-width{
+        width:50%;
+    }
+    .mcontainer{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .wTitleRight{
+        padding:16px 0px 0px 10px;
+    }
+    .inReTopImg{
+        padding-left: 15px;
+    }
+    .swiperFontS{
+        font-size: 12px;
+    }
+    .swiperFontM{
+        font-size: 16px;
+    }
+    .swiperFontL{
+        font-size: 25px;
+    }
+    .swiperRight{
+        padding: 3% 2%;
+    }
+    .wal_register{
+        background:url(../../images/sign_up_bg.png) no-repeat -400px -92px;
+    }
+    .walLogin{
+        background:url(../../images/login_bg.png) no-repeat -400px 0;
+    }
+    .cash_row{
+        height: 320px;
+        padding-top: 30px;
+    }
+    .cashPage-title{
+        font-size: 30px;
+        padding: 40px 0 10px 0;
+    }
+
+    .cashPage-content{
+        font-size: 17px;
+        line-height: 33px;
+    }
+    .queEvRight{
+        width:242px;
+    }
+    .aboutTitle{
+             font-size:22px;
+         }
+    .aboutIntroduce{
+        font-size:14px;
+        line-height: 25px;
+        margin:3px 0;
+    }
+    .bank_radio{
+        padding: 9px 0 9px 4px;
+    }
+    .bank_radio10{
+        padding: 9px 0 9px 50px;
+    }
+    .zhiFuBaoBtn{
+        font-size:16px;
+        height: 38px;
+        line-height: 38px;
+    }
+    .swiperBottom{
+        padding-bottom:18%;
+    }
+}
+
+@media(min-width:992px)and (max-width:1500px) {
+    .wal{background:url(../../images/lg.jpg) -330px 0px  no-repeat;}
+}

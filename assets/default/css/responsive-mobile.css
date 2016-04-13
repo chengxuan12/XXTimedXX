@@ -1,0 +1,860 @@
+
+@media (max-width:768px) {
+    .protocol_header{
+        margin-top:60px;
+    }
+    .other_line{
+        width: 33.34%!important;
+    }
+
+    .aboutContent{
+        left: 32%;
+        width: 62%;
+    }
+    /*
+    .aboutTitle{
+        font-size:14px;
+    }
+    */
+    .visible-display-xs{
+        display: inline-block;
+    }
+    .wInvestNotes {
+        margin-top: 15px;
+    }
+    .tieXiValue{
+        font-size:16px
+    }
+    .product-title{
+        font-size:18px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    .product-rightTop{
+        height:0px;
+    }
+    .login-style{
+        padding:15px 0px 15px 0px;
+        margin:5px 8% 5px 8%;
+    }
+    .homes-style{
+        padding:15px 0px 15px 0px;
+        margin:5px 1% 5px 1%;
+    }
+
+    .chooseCapital .row{
+        padding:5px 0px;
+        margin-right: 10px;
+    }
+    .remarks{
+        padding:8px;
+        width:90%;
+    }
+    .mcol-xs-4{
+        min-height:1px;
+        float: left;
+        width: 33.33333333%;
+    }
+    .input-remark-width{
+        width:60%;
+    }
+    .mcontainer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .colla-bottom{
+        border-bottom: 1px solid #31b0d5;
+    }
+
+    .nav-responsive-header > ul > li > a:hover{
+        background-color:#f00!important;
+        color:#fff!important;
+    }
+    .nav-responsive-header-login > ul > li > a:hover{
+        background-color:#f00!important;
+        color:#fff!important;
+    }
+    .navbar-index-header{
+        background-color:#ccc!important;
+    }
+    .navbar-index-toggle:hover{
+        background-color:#f00!important;
+    }
+    .navbar-index-toggle:focus{
+        background-color:#f00!important;
+    }
+
+
+    .product-min-title{
+        margin-top:20px;
+        border:1px solid #f5f5f5;
+    }
+    .product-min-per{
+        padding: 10px 15px;
+    }
+    .product-rightTop{
+        height:0px;
+    }
+    .product-btn-more{
+        width:100%;
+    }
+    .product-buy{
+
+    }
+    .product-buyBtn{
+        position: fixed;
+        bottom: 46px;
+        width: 100%;
+        z-index: 9999;
+    }
+    .product-showTitle{
+        position:relative;
+        left:0px;
+    }
+    .product-learnMore{
+        text-align: center;
+        margin: auto;
+    }
+    .tabs a{width:33.33%;}
+    .tabs div{
+        width:0%;
+    }
+    .content-slide{padding:20px;}
+    .product-showImg{
+        text-align:center;
+    }
+
+    .mcol-xs-12{
+        min-height:1px;
+        float: left;
+        width: 100%;
+    }
+    .f1-hide{
+        display: none;
+    }
+    .row-footer{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .footer .f1{
+        padding-top:10px;
+    }
+
+
+
+    .main-back{display: none}
+    .wal{padding:50px 0 150px 0;background:#ea544a;}
+    .login{height:310px;float: inherit;margin: auto}
+    .small{
+        width: 220px;
+        margin-left: -20px;
+    }
+    .header-back .header{
+        height: 75px;
+    }
+    .title .fr{margin:0;}
+    .login .title{line-height:28px; margin-bottom:20px; }
+    .login  li{height:67px;}
+    .login{width:260px;padding:0px 20px 0 25px;}
+
+    .login .text1{
+        width:169px;
+        height:41px;
+        top:1px;
+        left:43px;
+    }
+    .login .btn2{margin-top:12px ;width:209px;background:url(../../images/dl-1.jpg) no-repeat;}
+    .checkcode-change{
+        display: none;
+    }
+
+
+    .invest-content{
+        margin: 20px 0px;
+    }
+    .content-item{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tcdPageCode{
+        padding: 15px 0px;
+        margin-left:-20px;
+    }
+    .product-rightTop .modal{
+        top:initial;
+        bottom: 85px;
+    }
+
+    .findPwd{
+        margin:30px 0;
+        padding: 16px 0 0 0;
+
+    }
+    .xxFindPwd{
+        height: auto;
+        float: inherit;
+        width: 100%;
+    }
+    .xxRegister{
+        height: auto;
+        float: inherit;
+        width: 100%;
+    }
+    .xxRegister .r-title{
+        line-height: 50px;
+        height: 50px;
+    }
+    .r-title .fl{
+        color:#ea544a;
+        font-size: 18px;
+    }
+    .r-title .fr {
+        width: 80px;
+        background: url(../../images/a1.jpg) no-repeat 55px center;
+    }
+
+    .xxRegister .form-group{
+        line-height: 30px;
+    }
+    .r-main{
+        padding-top:5px;
+    }
+    .r-main .msg_hight{
+        line-height: 30px;
+    }
+    .r-main .span1{
+        text-align:left;
+        height: 40px;
+        line-height: 40px;
+    }
+    .r-main .text1{
+        width: 100%!important;
+        background: #fff;
+        padding: 11px;
+        height:auto;
+        font-size: 14px;
+    }
+
+    .r-main .none1{
+        margin-left:0px;
+    }
+
+    .registerBtn{
+        width: 100%;
+        font-size:17px;
+        margin:30px auto 40px 0;
+    }
+    .proBuyRow{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top:40px;
+    }
+
+
+    .registerSu{
+        padding:30px 15px;
+    }
+    .register-success{
+        font-size: 18px;
+
+    }
+    .tAlign,.tAlign2{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .register-success .rsImg{
+        width: 220px;
+    }
+    .ag-title{
+        font-size: 19px;
+    }
+    .ag-content{
+        padding:10px 5px;
+    }
+
+    .assetData{
+        padding: 0px 30px;
+    }
+    .assetData .perAsset{
+        padding: 0 0 0 10px;
+    }
+    .perAsset .myAsset{
+        font-size:25px;
+    }
+    .assetData .currentEarn{
+        padding: 0px 10px;
+    }
+    .currentEarn .earning{
+        font-size:25px;
+    }
+    .personRight{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+
+    .page-float{
+        float:right;
+    }
+    .peron-align{
+        text-align: left;
+        padding-left: 15px;
+    }
+    .person-address{
+        margin-top:10px;
+    }
+    .person-dataMdy .person-form{
+        padding-left: 15px;
+        padding: 20px 7px 20px 15px;
+    }
+    .person-dataMdy{
+        padding-right: 15px;
+    }
+    .bottom20{
+        margin-bottom: 20px;
+    }
+    .personCardNo{
+        margin-top:0px;
+    }
+    .personBank .bankName{
+        font-size:15px;
+    }
+    .personBank .personBankImg{
+        height: 40px;
+        width: 40px;
+    }
+    .wei-mobileFooter{
+        text-align: center;
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+    .wei-mobileFooter a{
+        color:#797979;
+    }
+
+    .wTFoChoose{
+        color:#00A0E0;
+    }
+
+    .wei-mobileTop{
+        font-size: 20px;
+        background:#fff;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .wei-mobileTop a{
+        color:#666;
+    }
+     .wTback{
+        text-align: left;
+        padding: 10px 15px;
+    }
+    .wTbackShow{
+        display: none;
+    }
+     .wTImg{
+        text-align: center;
+        padding: 6px 0;
+    }
+    .wTPerson{
+        text-align: right;
+        padding: 8px 15px;
+    }
+    .wEnterPZ{
+        text-align: right;
+        padding: 13px 0px;
+        font-size: 14px;
+    }
+
+    .wReName{
+        font-size: 18px;
+    }
+    .wReNameBottom{
+        font-size: 16px;
+        padding:5px 0px 15px 0px;
+    }
+    .wRecordHead{
+        padding:20px 0px 25px 15px;
+    }
+    .wRecordTitle{
+        font-size: 18px;
+    }
+    .wRecordBadge{
+        margin: 2px 0px 0px 2px;
+    }
+    .weiXin-tBottom{
+        padding-bottom:3px;
+        font-size: 13px;
+    }
+    .wProfit{
+        padding-left: 14px;
+    }
+    .wProfitRate{
+        font-size: 25px;
+    }
+    .w33{
+        font-size: 25px;
+    }
+    .wStatus{
+        margin:10px auto;
+    }
+    .scrollInvest{
+        margin-top: 20px;
+    }
+    .inReTopImg{
+       padding-left: 15px;
+    }
+    .wInImg1{
+        width: 115px;
+    }
+    .peopleInXXImg{
+        width: 100px;
+        padding: 20px 0px;
+    }
+    .peopleInXX{
+        padding:30px 0;
+    }
+    .startInvest{
+        padding:35px 0 30px 0;
+    }
+    .stInFont{
+        font-size:26px;
+    }
+    .comProblem{
+        padding-top:15px;
+    }
+    .mMarBottom{
+        margin-bottom: 43px;
+    }
+    .mMarTop{
+        margin-top:45px;
+    }
+    .queEvLeftBack{
+        min-height:330px;
+    }
+    .queEvRiMobile{
+        position: fixed;
+        right: 0px;
+        bottom: 49px;
+        z-index: 999;
+    }
+    .queEvRiMoImg{
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin:auto 0 0 auto;
+        font-size: 20px;
+        color: #1F89FE;
+        background: #F5F5F5;
+        border:1px solid #d8d8d8;
+        opacity:0.8;
+    }
+
+    .queEvRiMobile ul li{
+        text-align: center;
+        height: 30px;
+        line-height: 25px;
+    }
+    .queEvRiMobile ul li a{
+        color:#888888;
+        font-size: 12px;
+    }
+    .queEvRiMoList{
+        background: #F2F2F2;
+        display: none;
+        border: 1px solid #bbb;
+    }
+    .queEvRiMobileItem{
+        border-bottom: 1px solid #e6e6e6;
+        padding: 10px 0;
+    }
+    .qMoULactive{
+        background: #35BCFF;
+    }
+    .qMoULactive a{
+        color:#fff!important;
+        font-size: 14px!important;
+    }
+    .InHotTop{
+        margin-top: 15px;
+    }
+    .smsCode{
+        height:auto;
+        font-size: 14px;
+        padding: 11px 0px 11px 11px;
+        width: 46%!important;
+        margin-right: 0;
+        background: #fff;
+    }
+    .smsCodeBtn{
+        width: 46%!important;
+        padding: 6px 4px;
+    }
+    .resetSms{
+        padding:10px 6px;
+    }
+    .abXXM{
+        padding: 30px 15px 10px 15px;
+    }
+    .abXXB{
+        padding: 30px 15px;
+    }
+    .abXX-title{
+        font-size: 25px;
+        padding: 0 15px 15px 15px;
+    }
+    .abXX-content{
+        font-size: 16px;
+        color:#01abff;
+        text-align: center;
+    }
+    .abColor{
+        color:#777;
+    }
+    .abContent1{
+        text-align: left;
+        padding: 5px 15px;
+    }
+    .abContent2{
+        padding-left:15px;
+    }
+
+    .comTyProblem{
+        padding-top: 35px;
+        border-top:1px solid #e1e1e1;
+    }
+    .comTyProBottom{
+        margin-bottom: 70px;
+    }
+
+    .cash_row{
+        height: 300px;
+        padding-top: 20px;
+    }
+    .cashPage-title{
+        font-size:28px;
+        padding: 20px 0 10px 0;
+    }
+    .cashPage-content{
+        font-size:16px;
+    }
+
+    .wl-input{
+        width: 100%;
+        background: #fff;
+        padding: 11px;
+        height:auto;
+        font-size: 18px;
+    }
+    .walLogin{
+        background: #f6f6f6;
+        padding:38px 0 0 0;
+    }
+    .wLogin{
+        margin: 0 -15px;
+        font-size: 16px;
+    }
+    .wl-cueHeight{
+        min-height: 15px;
+    }
+    .wl-remLeft{
+        padding: 0 0 0 20px;
+        margin-top: 15px;
+    }
+    .wl-foRight{
+        margin-top: 15px;
+        padding-right:15px;
+    }
+    .wl-foRight .f-font{
+        color:#666;
+    }
+    .loginBtn{
+        width: 100%;
+        margin: 5px 0 25px 0;
+    }
+    .wal_register{
+        background: #f6f6f6;
+        padding:38px 0 0 0;
+    }
+
+    .r-xsInblock{
+        display: inline-block;
+    }
+    .r-agreeTop{
+        margin-top: 18px;
+    }
+    .oPlayTitle{
+        font-size: 18px;
+    }
+    .wRecommend{
+        margin-top: 15px;
+    }
+    .othersTop{
+        margin-top: 15px;
+    }
+    .proPayResult{
+        margin: 70px auto;
+    }
+    .PayResultImg{
+        height: 40px;
+    }
+    .PayResultImgFont{
+        height: 40px;
+        line-height: 40px;
+    }
+    .queEvLeftPadding{
+        padding: 20px 0px;
+    }
+    .wTitle{
+        font-size: 18px;
+    }
+    .oPlayTitle{
+        font-size:16px;
+    }
+    .aboutTitle{
+        font-size:16px;
+    }
+    .aboutIntroduce{
+        font-size: 12px;
+        line-height: 24px;
+        margin:2px 0;
+    }
+    .ui-header{
+        font-size:20px;
+    }
+    .panel-tFont{
+        font-size: 15px;
+    }
+    .perTabs a{
+        width:33.3%;
+    }
+    .perTabLine{
+        width:33.3%;
+    }
+    .chargeFont{
+        text-align: left;
+    }
+    .white_content {
+        top: 22%;
+        left: 15%;
+        width: 70%;
+        height: 190px;
+        min-height: 190px;
+    }
+    .charge_liBtn{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .liBtnColor1{
+        margin: 50px 0 50px auto;
+    }
+    .liBtnColor2{
+        margin: 50px auto 50px 0;
+    }
+    .chargeBank{
+        padding: 9px 0 9px 30px;
+    }
+    .tran-Status{
+        width: 92px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        margin: auto;
+        border-radius: 4px;
+    }
+    .securityBack{
+        margin-bottom:0px;
+    }
+    .visible-inl{
+        display: inline-block;
+    }
+    .visible-mb{
+        display: block;
+    }
+    .security{
+        padding: 20px 15px;
+    }
+    .security .s-title{
+        padding-bottom: 20px;
+    }
+    .resetBtn{
+        margin: 0 auto 50px 0;
+    }
+    .errorImg{
+        width: 250px;
+    }
+    .richBoxPge{
+        margin-top: 20px;
+    }
+}
+
+
+@media(max-width:450px){
+
+    .aboutContent.mobile{
+        position:absolute;
+        top: -25%;
+        left: 18%;
+        width: 92%!important;
+        font-size: 12px;
+        -webkit-transform:scale(0.6);
+    }
+    .aboutContent.window{
+        position:absolute;
+        left: 15%;
+        width: 82%;
+        font-size: 12px;
+    }
+
+    .pad-r{
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .i-record-mobile {
+        padding-left: 20px;
+    }
+    .r-main .none1{
+        padding-right: 0px;
+    }
+    .r-main .none1 span{
+        width: 52px;
+    }
+    .hidden-mi{
+        display: none;
+    }
+    .visible-mi{
+        display: block;
+    }
+   .i-record-mobile .triangle-topright{
+       border-left:58px solid transparent;
+   }
+   .i-record-mobile .i-status{
+       font-size: 17px;
+       top:-3px;
+       transform: rotate(47deg);
+       -ms-transform: rotate(47deg); /* IE 9 */
+       -webkit-transform: rotate(47deg); /* Safari and Chrome */
+   }
+   .annual-font{
+     padding-left: 0px;
+   }
+    .rating i{
+        display:initial;
+    }
+   .annual{
+       padding-left: 0px;
+   }
+    .trans-title  .dropdown-menu>li>a{
+        padding: 3px 10px;
+    }
+    .personBank{
+      margin:0px 0px 20px 0px;
+    }
+    .personBanks .panel-body{
+      padding:15px 0px ;
+    }
+    .personBank .personBankImg{
+        height:35px;
+        width: 35px;
+    }
+    .col-mxs-12{
+        width: 100%;
+    }
+    .rengouBtn{
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .InHot:hover .rengouBtn{
+        line-height: 43px;
+    }
+    .wTitleRight{
+        padding:16px 0px 0px 85px;
+    }
+    .wTPerson{
+        padding: 8px 15px 0 0;
+    }
+    .wEnterPZ{
+        text-align: center;
+    }
+    .white_content {
+        top: 22%;
+        left: 7%;
+        width: 95%;
+        height: 190px;
+        min-height: 190px;
+    }
+    .p-r-0{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .chargeBank{
+        padding: 9px 0 9px 5px;
+    }
+    .asDetail-mdate{
+        text-align: right;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width:400px){
+    .tranDetail-M .t-jinEr{
+        font-size:12px;
+    }
+    .tranDetail-M .t-quantity{
+        font-size:13px;
+    }
+}
+@media (max-width:350px) {
+  .seNone{
+      display: none;
+  }
+}
+
+@media (max-width:340px) {
+   .p-r-0{
+       padding-right: 0px;
+       padding-left: 0px;
+   }
+    .chargeBank a{
+        font-size: 12px;
+    }s
+    .cBankImg{
+        width: 14px;
+    }
+    .chargeBank{
+        padding: 9px 0 9px 5px;
+        border-right-color:#fff ;
+    }
+    .tran-Status{
+        width: 75px;
+    }
+    .trans-title .tr-status{
+        margin-left: 65%;
+        padding-right: 0px;
+    }
+}
+@media (max-width:320px) {
+    .footer .f2{
+        padding: 30px 0;
+        margin-left: -7px;
+    }
+    .footer .f3{
+        padding: 30px 12px;
+    }
+    .p-l-0{
+        padding-left: 0px;
+    }
+    .reSucFont2{
+        font-size:14px;
+    }
+    .register-success .rsBtn{
+        width: 245px;
+
+    }
+    .chargeBank{
+        padding: 9px 0 9px 0px;
+    }
+}
